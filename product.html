@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Education Meeting HTML5 Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+<style>
+    .listing-section, .cart-section {
+  width: 100%;
+  float: left;
+  padding: 1%;
+  border-bottom: 0.01em solid #dddbdb;
+}
+
+.product {
+  float: left;
+  width: 100%;
+  border-radius: 2%;
+  margin: 1%;
+}
+
+.product:hover {
+  box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);  
+  -moz-box-shadow:    1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.image-box {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2% 2% 0 0;
+}
+
+.images {
+  height: 15em;
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;
+  border-radius: 2% 2% 0 0;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+.images:hover {
+  transform: scale(1.2);
+  overflow: hidden;
+  border-radius: 2%;
+}
+
+/* IMAGES */
+
+#image-2 {background-image: url("https://newenglandapples.files.wordpress.com/2014/10/img_5595.jpg")}
+
+#image-3 {background-image: url("https://sc01.alicdn.com/kf/UT8ovSIXQNaXXagOFbXt/Fresh-Passion-Fruit-with-Best-Price-and.jpg")}
+
+#image-4 {background-image: url("http://www.foodmatters.com/media/images/articles/16-powerful-reasons-to-eat-pineapple.jpg")}
+
+#image-5 {background-image: url("http://membrillo.com.au/wp-content/uploads/2016/11/bg-mango-01.jpg")}
+
+#image-6 {background-image: url("http://ell.h-cdn.co/assets/16/27/980x490/landscape-1467750721-gettyimages-146896572.jpg")}
+
+#image-7 {background-image: url("http://www.hesca.org/wp-content/uploads/2016/08/banana.jpg")}
+
+#image-8 {background-image: url("http://www.baag.com.au/pictures/produce/plums2.jpg")}
+
+#image-9 {background-image: url("https://ecowatchroar-img.rbl.ms/simage/https%3A%2F%2Fassets.rbl.ms%2F9458277%2F1200x600.jpg/2000%2C2000/J9vl96eLQCOEy3Xy/img.jpg")}
+
+#image-10 {background-image: url("https://www.parhlo.com/wp-content/uploads/2016/04/Valencia_market_-_lemons-1940x1454.jpg")}
+
+.text-box {
+  width: 100%;
+  float: left;
+  border: 0.01em solid #dddbdb;
+  border-radius: 0 0 2% 2%;
+  padding: 1em;
+}
+
+h2, h3 {
+  float: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin: 0.2em auto;
+}
+
+.item, .price {
+  clear: left;
+  width: 100%;
+  text-align: center;
+}
+
+.price {
+  color: Grey;
+}
+
+.description, label, button, input {
+  float: left;
+  clear: left;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: justify;
+  margin: 0.2em auto;
+}
+
+input:focus {
+  outline-color: #fdf;
+}
+
+label {
+  width: 60%;
+}
+
+.text-box input {
+  width: 15%;
+  clear: none;
+}
+
+.text-box button {
+  margin-top: 1em;
+}
+
+button {
+  padding: 2%;
+  background-color: #dfd;
+  border: none;
+  border-radius: 2%;
+}
+
+button:hover {
+  bottom: 0.1em;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  bottom: 0;
+  background-color: #fdf;
+}
+
+.table-heading, .table-content {
+  width: 75%;
+  margin: 1% 12.25%;
+  float: left;
+  background-color: #dfd;
+}
+
+.table-heading h2 {
+  padding: 1%;
+  margin: 0;
+  text-align: center;
+}
+
+
+</style>
+  </head>
+
+<body>
+
+  <!-- Sub Header -->
+  <!-- <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">
+            <p><i class="fa fa-envelope"></i> : info@biocp.in , <i class="fa fa-phone"></i> 1234567890</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="right-icons">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- ***** Header Area Start ***** -->
+  <!-- <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12"> -->
+                <nav>
+                    <div class="navbar">
+                      <i class='bx bx-menu'></i>
+                      <div class="logo"><a href="index.html" class="">
+                        <img src="assets/images/biocp2.png" style="width: 80% !important;padding-top: 1%;">
+                          <!-- Edu Meeting -->
+                      </a></div>
+                      <div class="nav-links">
+                        <div class="sidebar-logo">
+                          <span class="logo-name">Biocp</span>
+                          <i class='bx bx-x' ></i>
+                        </div>
+                        <ul class="links">
+                          <li><a href="index.html">HOME</a></li>
+                          <li><a href="about.html">ABOUT</a></li>
+                          <li><a href="events.html">News & Events</a></li>
+                          <li>
+                            <a href="#">Products</a>
+                            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                            <ul class="htmlCss-sub-menu sub-menu">
+                              <li class="more">
+                                <span><a href="#">IVD</a>
+                                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                              </span>
+                                <ul class="more-sub-menu sub-menu">
+                                  <li><a href="product.html">Products</a></li>
+                                  <li><a href="product.html">Products</a></li>
+                                  <li><a href="product.html">Products</a></li>
+                                </ul>
+                              </li>
+                              <li class="more2">
+                                <span><a href="#">Research</a>
+                                <i class='bx bxs-chevron-right arrow more-arrow2'></i>
+                              </span>
+                                <ul class="more-sub-menu sub-menu">
+                                  <li><a href="product.html">Product</a></li>
+                                  <li><a href="product.html">Product</a></li>
+                                  <li><a href="product.html">Product</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          
+                          <li><a href="partners.html">Our Partners</a></li>
+                          <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+                      </div>
+                      <div class="search-box" style="display:none;">
+                        <i class='bx bx-search'></i>
+                        <div class="input-box">
+                          <input type="text" placeholder="Search...">
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                    
+                <!-- </div>
+            </div>
+        </div>
+    </header> -->
+    <!-- ***** Header Area End ***** -->
+
+  <section class="heading-page header-text" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6><a href="#" style="color:#fff;">HOME</a> /  Products</h6>
+        <center><h2 style="float: none;">Our Products</h2></center>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+
+
+<section style="padding-top:5%;padding-bottom:5%;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-12">
+
+            
+    <div class="listing-section">
+        <div class="product">
+          <div class="image-box">
+            <div class="images" id="image-1" style='background-image: url("assets/images/pr1.jpg");'></div>
+          </div>
+          <div class="text-box">
+            <h2 class="item">SEROTONIN high sensitive ELISA</h2>
+            <!-- <h3 class="price">$4.99</h3> -->
+            <p class="description">Research ultra-sensitive enzyme immunoassay for the quantitative determination of serotonin in various biological sample types and volumes.
+
+            </p>
+            <!-- <label for="item-1-quantity">Quantity:</label> -->
+            <!-- <input type="text" name="item-1-quantity" id="item-1-quantity" value="1"> -->
+            <a href="product_details.html"><button type="button" name="item-1-button" id="item-1-button"><center>More Details</center></button></a>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-12">
+
+            
+    <div class="listing-section">
+        <div class="product">
+          <div class="image-box">
+            <div class="images" id="image-1" style='background-image: url("assets/images/pr2.jpg");'></div>
+          </div>
+          <div class="text-box">
+            <h2 class="item">Human ICAM4 ELISA Kit PicoKine®</h2>
+            <!-- <h3 class="price">$4.99</h3> -->
+            <p class="description">Research ultra-sensitive enzyme immunoassay for the quantitative determination of serotonin in various biological sample types and volumes.
+
+            </p>
+            <!-- <label for="item-1-quantity">Quantity:</label>
+            <input type="text" name="item-1-quantity" id="item-1-quantity" value="1"> -->
+            <a href="product_details.html"><button type="button" name="item-1-button" id="item-1-button"><center>More Details</center></button></a>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="col-lg-3 col-md-12">
+
+            
+    <div class="listing-section">
+        <div class="product">
+          <div class="image-box">
+            <div class="images" id="image-1" style='background-image: url("assets/images/pr1.jpg");'></div>
+          </div>
+          <div class="text-box">
+            <h2 class="item">SEROTONIN high sensitive ELISA</h2>
+            <!-- <h3 class="price">$4.99</h3> -->
+            <p class="description">Research ultra-sensitive enzyme immunoassay for the quantitative determination of serotonin in various biological sample types and volumes.
+
+            </p>
+            <!-- <label for="item-1-quantity">Quantity:</label>
+            <input type="text" name="item-1-quantity" id="item-1-quantity" value="1"> -->
+            <a href="product_details.html"><button type="button" name="item-1-button" id="item-1-button"><center>More Details</center></button></a>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-lg-3 col-md-12">
+
+            
+    <div class="listing-section">
+        <div class="product">
+          <div class="image-box">
+            <div class="images" id="image-1" style='background-image: url("assets/images/pr2.jpg");'></div>
+          </div>
+          <div class="text-box">
+            <h2 class="item">Human ICAM4 ELISA Kit PicoKine®</h2>
+            <!-- <h3 class="price">$4.99</h3> -->
+            <p class="description">Research ultra-sensitive enzyme immunoassay for the quantitative determination of serotonin in various biological sample types and volumes.
+
+            </p>
+            <!-- <label for="item-1-quantity">Quantity:</label>
+            <input type="text" name="item-1-quantity" id="item-1-quantity" value="1"> -->
+            <a href="product_details.html"><button type="button" name="item-1-button" id="item-1-button"><center>More Details</center></button></a>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+</div>
+    
+</section>
+
+
+  <section class="contact-us" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12">
+          <h5 class="text-light mb-4">Biocp</h5>
+                    <p class="mb-2" style="color:#fff;"><i class="fa fa-map-marker me-3"></i>First Floor, Chundanal Monarch,<br> K K Padmanabhan Road,<br> Kochi - 682018, India</p>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href=" " style="color:#fff;">About Us</a><br>
+                    <a class="btn btn-link" href="" style="color:#fff;">Contact Us</a><br>
+                    <a class="btn btn-link" href="" style="color:#fff;">News & Events</a><br>
+                    <a class="btn btn-link" href="" style="color:#fff;">Our Partners</a>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <h5 class="text-light mb-4">Contact Us</h5>
+          <p class="mb-2" style="color:#fff;"><i class="fa fa-phone me-3"></i>+91 484 2390393</p>
+          <p class="mb-2" style="color:#fff;"><i class="fa fa-phone me-3"></i>+91 484 2390292</p>
+          <p class="mb-2" style="color:#fff;"><i class="fa fa-envelope me-3"></i>info@biocp.in</p>
+          <div class="d-flex pt-2">
+              <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fa fa-twitter"></i></a>
+              <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fa fa-facebook"></i></a>
+              <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fa fa-youtube"></i></a>
+              <a class="btn btn-square btn-outline-secondary rounded-circle me-0" href=""><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <h5 class="text-light mb-4">More Enquiry</h5>
+                    <p style="color:#fff;">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <button class="border_button">Call Now <i class="fa fa-phone"></i> </button>
+        </div>
+        <!-- <div class="col-lg-9 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Let's get in touch</h2>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="name" type="text" id="name" placeholder="YOURNAME...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL..." required="">
+                  </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="subject" type="text" id="subject" placeholder="SUBJECT...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="YOUR MESSAGE..." required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="button">SEND MESSAGE NOW</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="right-info">
+            <ul>
+              <li>
+                <h6>Phone Number</h6>
+                <span>010-020-0340</span>
+              </li>
+              <li>
+                <h6>Email Address</h6>
+                <span>info@meeting.edu</span>
+              </li>
+              <li>
+                <h6>Street Address</h6>
+                <span>Rio de Janeiro - RJ, 22795-008, Brazil</span>
+              </li>
+              <li>
+                <h6>Website URL</h6>
+                <span>www.meeting.edu</span>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright © 2024 BIOCP. All Rights Reserved. <a href="https://bharathitech.com/" target="_parent" title="free css templates">BharathiTech</a>
+          <!-- <br>
+          Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a>
+          <br>
+          Distibuted By: <a href="https://themewagon.com" target="_blank" title="Build Better UI, Faster">ThemeWagon</a> -->
+        </p>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+    <script>
+      $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+    </script>
+
+
+
+
+
+
+</body>
+
+</body>
+</html>

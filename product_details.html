@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Education Meeting HTML5 Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+
+<style>
+    .card-wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 100%;
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.product-content{
+    padding: 2rem 1rem;
+}
+.product-title{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.product-title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #12263a;
+}
+.product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: #256eff;
+    color: #fff;
+    padding: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+.product-link:hover{
+    opacity: 0.9;
+}
+.product-rating{
+    color: #ffc107;
+}
+.product-rating span{
+    font-weight: 600;
+    color: #252525;
+}
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.product-price span{
+    font-weight: 400;
+}
+.last-price span{
+    color: #fdb813;
+    text-decoration: line-through;
+}
+.new-price span{
+    color: #256eff;
+}
+.product-detail h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.product-detail ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.product-detail ul li{
+    margin: 0;
+    list-style: none;
+    background: url(https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/checked.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.product-detail ul li span{
+    font-weight: 400;
+}
+.purchase-info{
+    margin: 1.5rem 0;
+}
+.purchase-info input,
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info input{
+    width: 60px;
+}
+.purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+}
+.purchase-info .btn:first-of-type{
+    background: #256eff;
+}
+.purchase-info .btn:last-of-type{
+    background: #fdb813;
+}
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+}
+.social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    border: 1px solid #000;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: #000;
+    border-color: transparent;
+    color: #fff;
+}
+
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
+</style>
+  </head>
+
+<body>
+
+  <!-- Sub Header -->
+  <!-- <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">
+            <p><i class="fa fa-envelope"></i> : info@biocp.in , <i class="fa fa-phone"></i> 1234567890</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="right-icons">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- ***** Header Area Start ***** -->
+  <!-- <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12"> -->
+                <nav>
+                    <div class="navbar">
+                      <i class='bx bx-menu'></i>
+                      <div class="logo"><a href="index.html" class="">
+                        <img src="assets/images/biocp2.png" style="width: 80% !important;padding-top: 1%;">
+                          <!-- Edu Meeting -->
+                      </a></div>
+                      <div class="nav-links">
+                        <div class="sidebar-logo">
+                          <span class="logo-name">Biocp</span>
+                          <i class='bx bx-x' ></i>
+                        </div>
+                        <ul class="links">
+                          <li><a href="index.html">HOME</a></li>
+                          <li><a href="about.html">ABOUT</a></li>
+                          <li><a href="events.html">News & Events</a></li>
+                          <li>
+                            <a href="#">Products</a>
+                            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                            <ul class="htmlCss-sub-menu sub-menu">
+                              <li class="more">
+                                <span><a href="#">IVD</a>
+                                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                              </span>
+                                <ul class="more-sub-menu sub-menu">
+                                  <li><a href="product.html">Products</a></li>
+                                  <li><a href="product.html">Products</a></li>
+                                  <li><a href="product.html">Products</a></li>
+                                </ul>
+                              </li>
+                              <li class="more2">
+                                <span><a href="#">Research</a>
+                                <i class='bx bxs-chevron-right arrow more-arrow2'></i>
+                              </span>
+                                <ul class="more-sub-menu sub-menu">
+                                  <li><a href="product.html">Product</a></li>
+                                  <li><a href="product.html">Product</a></li>
+                                  <li><a href="product.html">Product</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          
+                          <li><a href="partners.html">Our Partners</a></li>
+                          <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+                      </div>
+                      <div class="search-box" style="display:none;">
+                        <i class='bx bx-search'></i>
+                        <div class="input-box">
+                          <input type="text" placeholder="Search...">
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                    
+                <!-- </div>
+            </div>
+        </div>
+    </header> -->
+    <!-- ***** Header Area End ***** -->
+
+  <section class="heading-page header-text" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6><a href="#" style="color:#fff;">HOME</a> /  Product Details</h6>
+          <h2>Product Details</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<section>
+    <div class = "card-wrapper">
+        <div class = "card">
+          <!-- card left -->
+          <div class = "product-imgs">
+            <div class = "img-display">
+              <div class = "img-showcase">
+                <img src = "assets/images/pr1.jpg" alt = "shoe image">
+                <img src = "assets/images/pr2.jpg" alt = "shoe image">
+                <img src = "assets/images/pr1.jpg" alt = "shoe image">
+                <img src = "assets/images/pr2.jpg" alt = "shoe image">
+              </div>
+            </div>
+            <div class = "img-select">
+              <div class = "img-item">
+                <a href = "#" data-id = "1">
+                  <img src = "assets/images/pr2.jpg" alt = "shoe image" class="sub_im">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "2">
+                  <img src = "assets/images/pr2.jpg" alt = "shoe image" class="sub_im">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "3">
+                  <img src = "assets/images/pr2.jpg" alt = "shoe image" class="sub_im">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "4">
+                  <img src = "assets/images/pr2.jpg" alt = "shoe image" class="sub_im">
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card right -->
+          <div class = "product-content">
+            <h2 class = "product-title">SEROTONIN HIGH SENSITIVE ELISA</h2>
+            
+      
+            <div class = "product-price">
+              <p class = "new-price">Price: <span>$249.00</span></p>
+            </div>
+      
+            <div class = "product-detail">
+              <h5>about this item: </h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+              
+              <ul>
+                <li>Color: <span>Black</span></li>
+                <li>Available: <span>in stock</span></li>
+                <li>Category: <span>Shoes</span></li>
+                <li>Shipping Area: <span>All over the world</span></li>
+                <li>Shipping Fee: <span>Free</span></li>
+                <!-- <li>Quantity : <span><input type = "number" min = "0" value = "1"></span></li> -->
+              </ul>
+            </div>
+      
+            <div class = "purchase-info">
+              <p><b>Quantity :- </b><span><input type = "number" min = "0" value = "1"></span></p><br>
+              <button type = "button" class = "btn">
+                yes, I am Intrested <i class = "fa fa-whatsapp"></i>
+              </button>
+              <!-- <button type = "button" class = "btn">Compare</button> -->
+            </div>
+      
+            
+          </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+
+
+  <section class="contact-us" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12">
+          <h5 class="text-light mb-4">Biocp</h5>
+                    <p class="mb-2" style="color:#fff;"><i class="fa fa-map-marker me-3"></i>First Floor, Chundanal Monarch,<br> K K Padmanabhan Road,<br> Kochi - 682018, India</p>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href=" " style="color:#fff;">About Us</a><br>
+                    <a class="btn btn-link" href="" style="color:#fff;">Contact Us</a><br>
+                    <a class="btn btn-link" href="" style="color:#fff;">News & Events</a><br>
+                    <a class="btn btn-link" href="" style="color:#fff;">Our Partners</a>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <h5 class="text-light mb-4">Contact Us</h5>
+          <p class="mb-2" style="color:#fff;"><i class="fa fa-phone me-3"></i>+91 484 2390393</p>
+          <p class="mb-2" style="color:#fff;"><i class="fa fa-phone me-3"></i>+91 484 2390292</p>
+          <p class="mb-2" style="color:#fff;"><i class="fa fa-envelope me-3"></i>info@biocp.in</p>
+          <div class="d-flex pt-2">
+              <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fa fa-twitter"></i></a>
+              <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fa fa-facebook"></i></a>
+              <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fa fa-youtube"></i></a>
+              <a class="btn btn-square btn-outline-secondary rounded-circle me-0" href=""><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <h5 class="text-light mb-4">More Enquiry</h5>
+                    <p style="color:#fff;">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <button class="border_button">Call Now <i class="fa fa-phone"></i> </button>
+        </div>
+        <!-- <div class="col-lg-9 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Let's get in touch</h2>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="name" type="text" id="name" placeholder="YOURNAME...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL..." required="">
+                  </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="subject" type="text" id="subject" placeholder="SUBJECT...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="YOUR MESSAGE..." required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="button">SEND MESSAGE NOW</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="right-info">
+            <ul>
+              <li>
+                <h6>Phone Number</h6>
+                <span>010-020-0340</span>
+              </li>
+              <li>
+                <h6>Email Address</h6>
+                <span>info@meeting.edu</span>
+              </li>
+              <li>
+                <h6>Street Address</h6>
+                <span>Rio de Janeiro - RJ, 22795-008, Brazil</span>
+              </li>
+              <li>
+                <h6>Website URL</h6>
+                <span>www.meeting.edu</span>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright © 2024 BIOCP. All Rights Reserved. <a href="https://bharathitech.com/" target="_parent" title="free css templates">BharathiTech</a>
+          <!-- <br>
+          Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a>
+          <br>
+          Distibuted By: <a href="https://themewagon.com" target="_blank" title="Build Better UI, Faster">ThemeWagon</a> -->
+        </p>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+    <script>
+      $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+    </script>
+
+
+
+<script>
+    const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage(){
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+}
+
+window.addEventListener('resize', slideImage);
+</script>
+
+
+</body>
+
+</body>
+</html>
