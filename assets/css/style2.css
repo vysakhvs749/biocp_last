@@ -192,6 +192,14 @@ nav .navbar .links li:hover .js-sub-menu{
   }
 }
 @media (max-width:800px){
+  .logo{
+    width: 90%;
+  }
+  .new_nav_img{
+    display: block;
+margin-left: auto;
+margin-right: auto;
+  }
   nav{
     /* position: relative; */
   }
